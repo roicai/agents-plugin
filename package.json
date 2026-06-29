@@ -1,0 +1,58 @@
+{
+  "name": "@roicai/mcp-server",
+  "version": "1.0.0",
+  "description": "Financial data MCP server and stock market MCP server: connect Claude, ChatGPT, Cursor, VS Code, and Codex to stock prices, financial statements, earnings call transcripts, fundamentals, and ratios for 60,000+ public companies via the Model Context Protocol.",
+  "type": "module",
+  "bin": {
+    "roicai-mcp-server": "./server.js"
+  },
+  "main": "server.js",
+  "files": [
+    "server.js",
+    "README.md",
+    "LICENSE",
+    ".env.example",
+    "examples"
+  ],
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "financial-data-mcp-server",
+    "stock-market-mcp-server",
+    "finance-mcp-server",
+    "stock-mcp-server",
+    "stock-price-mcp",
+    "financial-statements",
+    "earnings-call-transcripts",
+    "fundamentals",
+    "financial-ratios",
+    "stock-prices",
+    "claude",
+    "chatgpt",
+    "cursor",
+    "anthropic",
+    "ai",
+    "roic"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.25.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roicai/mcp-server.git"
+  },
+  "homepage": "https://www.roic.ai/api/mcp",
+  "bugs": {
+    "url": "https://github.com/roicai/mcp-server/issues"
+  },
+  "author": "ROIC.ai",
+  "license": "MIT"
+}

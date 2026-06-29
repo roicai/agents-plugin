@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "roicai": {
+      "command": "npx",
+      "args": ["-y", "@roicai/mcp-server"],
+      "env": {
+        "ROIC_API_KEY": "your_key_here"
+      }
+    }
+  }
+}
