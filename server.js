@@ -12,7 +12,7 @@
  * Usage:
  *   ROIC_API_KEY=your_key npx @roicai/mcp-server
  *
- * Get a free API key: https://roic.ai/account/api
+ * Get a free API key: https://www.roic.ai/dashboard
  * Docs: https://www.roic.ai/api/mcp
  */
 
@@ -28,7 +28,7 @@ if (!API_KEY) {
   // Don't crash: tool discovery still works so clients can list capabilities.
   // Calls will return a clear "set ROIC_API_KEY" error until a key is provided.
   console.error(
-    '[roicai-mcp-server] No ROIC_API_KEY set. Get a free key at https://roic.ai/account/api ' +
+    '[roicai-mcp-server] No ROIC_API_KEY set. Get a free key at https://www.roic.ai/dashboard ' +
       'and pass it via the ROIC_API_KEY environment variable.',
   );
 }
@@ -38,7 +38,7 @@ async function apiGet(path, params = {}) {
   if (!API_KEY) {
     throw new Error(
       'Missing ROIC.ai API key. Set the ROIC_API_KEY environment variable. ' +
-        'Get a free key at https://roic.ai/account/api',
+        'Get a free key at https://www.roic.ai/dashboard',
     );
   }
   const url = new URL(API_BASE + path);

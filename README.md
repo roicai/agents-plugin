@@ -14,11 +14,34 @@ It is **open source** and **free to run** from this GitHub repo: bring a free AP
 
 ---
 
-## Quickstart
+## Hosted version (recommended)
 
-You need a free ROIC.ai API key. Get one at **https://roic.ai/account/api**.
+The fastest way to use ROIC.ai is the **hosted MCP server** at `https://mcp.roic.ai/mcp` — Streamable HTTP with OAuth sign-in, so there is no API key to manage and it updates automatically. Works with ChatGPT, Claude, Cursor, VS Code, and Codex.
 
-Run the server directly with `npx` (no install):
+Claude Code:
+
+```bash
+claude mcp add --transport http roicai https://mcp.roic.ai/mcp
+```
+
+Any client that takes a URL-based MCP server:
+
+```json
+{
+  "mcpServers": {
+    "roicai": {
+      "url": "https://mcp.roic.ai/mcp",
+      "transport": "http"
+    }
+  }
+}
+```
+
+Full per-client setup guides (ChatGPT, Claude, Cursor, VS Code, Codex): [roic.ai/api/mcp](https://www.roic.ai/api/mcp).
+
+## Self-hosted (open source)
+
+Prefer to run it yourself with an API key? This repo is the open-source server. Get a free API key at **https://www.roic.ai/dashboard**, then run it directly with `npx` (no install):
 
 ```bash
 ROIC_API_KEY=your_key npx @roicai/mcp-server
@@ -133,7 +156,7 @@ Which sectors have the most publicly traded companies?
 
 ## Authentication
 
-The server authenticates to the ROIC.ai REST API with an API key passed as the `ROIC_API_KEY` environment variable. Get a free key at [roic.ai/account/api](https://roic.ai/account/api). The free tier covers every tool across all public companies; paid plans raise the rate limit and history depth. See [pricing](https://roic.ai/pricing).
+The server authenticates to the ROIC.ai REST API with an API key passed as the `ROIC_API_KEY` environment variable. Get a free key from your [ROIC.ai dashboard](https://www.roic.ai/dashboard). The free tier covers every tool across all public companies; paid plans raise the rate limit and history depth. See [pricing](https://roic.ai/pricing).
 
 ## Configuration
 
@@ -153,15 +176,11 @@ ROIC_API_KEY=your_key npm start
 
 Requires Node.js 18+ (uses the built-in `fetch`).
 
-## Hosted version (OAuth, no API key)
-
-Prefer not to manage an API key? ROIC.ai also runs a hosted MCP server at `https://mcp.roic.ai/mcp` over Streamable HTTP with OAuth sign-in. Setup guides for ChatGPT, Claude, Cursor, VS Code, and Codex: [roic.ai/api/mcp](https://www.roic.ai/api/mcp).
-
 ## Links
 
 - Docs: https://www.roic.ai/api/mcp
 - REST API: https://www.roic.ai/api
-- Get an API key: https://roic.ai/account/api
+- Get an API key: https://www.roic.ai/dashboard
 - Model Context Protocol: https://modelcontextprotocol.io
 
 ## License
