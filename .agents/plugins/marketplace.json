@@ -1,14 +1,14 @@
 {
-  "name": "personal",
+  "name": "plugin",
   "interface": {
-    "displayName": "Personal"
+    "displayName": "ROIC.AI"
   },
   "plugins": [
     {
       "name": "roicai",
       "source": {
         "source": "local",
-        "path": "./plugins/roicai"
+        "path": "./plugin"
       },
       "policy": {
         "installation": "AVAILABLE",

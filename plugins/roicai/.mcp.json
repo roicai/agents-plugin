@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "roicai": {
-      "type": "streamable-http",
-      "url": "https://mcp.roic.ai/mcp"
-    }
-  }
-}

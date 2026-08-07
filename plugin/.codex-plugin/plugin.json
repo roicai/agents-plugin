@@ -27,24 +27,21 @@
     "llm-tools"
   ],
   "skills": "./skills/",
-  "mcpServers": "./.mcp.json",
+  "mcpServers": "./mcp.json",
   "interface": {
-    "displayName": "ROIC.ai",
-    "shortDescription": "Research companies and markets with ROIC.ai data.",
-    "longDescription": "Access ROIC.ai financial statements, market data, ratios, valuations, earnings data, and API guidance.",
+    "displayName": "ROIC.AI",
+    "shortDescription": "Research companies and markets with ROIC.AI data.",
+    "longDescription": "Access ROIC.AI financial statements, market data, ratios, valuations, earnings data, and API guidance.",
     "developerName": "ROIC.AI",
     "category": "Productivity",
-    "capabilities": [
-      "Financial research",
-      "Market data"
-    ],
+    "capabilities": ["Financial research", "Market data"],
     "websiteURL": "https://www.roic.ai",
     "composerIcon": "./assets/icon.png",
     "logo": "./assets/logo.png",
     "defaultPrompt": [
       "Analyze AAPL's financial performance.",
       "Compare the valuation ratios of MSFT and GOOGL.",
-      "Show the latest market data for NVDA."
+      "Show the latest earnings calls for NVDA."
     ]
   }
 }
