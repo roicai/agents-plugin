@@ -1,0 +1,50 @@
+{
+  "name": "roicai",
+  "version": "1.0.0+codex.20260807090847",
+  "description": "Financial statements, stock prices, ratios, valuations, and earnings data from ROIC.AI",
+  "author": {
+    "name": "ROIC.AI",
+    "url": "https://www.roic.ai"
+  },
+  "homepage": "https://www.roic.ai/api/mcp",
+  "repository": "https://github.com/roicai/mcp-server",
+  "license": "MIT",
+  "keywords": [
+    "finance",
+    "financial-data",
+    "stocks",
+    "stock-market",
+    "market-data",
+    "fundamental-data",
+    "financial-statements",
+    "real-time-quotes",
+    "historical-data",
+    "options-data",
+    "technical-indicators",
+    "sec-filings",
+    "earnings-transcripts",
+    "ai-agent-tools",
+    "llm-tools"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "ROIC.ai",
+    "shortDescription": "Research companies and markets with ROIC.ai data.",
+    "longDescription": "Access ROIC.ai financial statements, market data, ratios, valuations, earnings data, and API guidance.",
+    "developerName": "ROIC.AI",
+    "category": "Productivity",
+    "capabilities": [
+      "Financial research",
+      "Market data"
+    ],
+    "websiteURL": "https://www.roic.ai",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
+    "defaultPrompt": [
+      "Analyze AAPL's financial performance.",
+      "Compare the valuation ratios of MSFT and GOOGL.",
+      "Show the latest market data for NVDA."
+    ]
+  }
+}
