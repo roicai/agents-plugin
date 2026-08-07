@@ -27,7 +27,7 @@
     "llm-tools"
   ],
   "skills": "./skills/",
-  "mcpServers": "./.mcp.json",
+  "mcpServers": "./mcp.json",
   "interface": {
     "displayName": "ROIC.AI",
     "shortDescription": "Research companies and markets with ROIC.AI data.",
