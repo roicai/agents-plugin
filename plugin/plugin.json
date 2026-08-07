@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "roicai",
+  "version": "1.0.0",
+  "description": "Financial statements, stock prices, ratios, valuations, and earnings data from ROIC.AI",
+  "author": {
+    "name": "ROIC.AI",
+    "url": "https://www.roic.ai"
+  },
+  "homepage": "https://www.roic.ai/api/mcp",
+  "repository": "https://github.com/roicai/mcp-server",
+  "license": "MIT",
+  "keywords": [
+    "finance",
+    "financial-data",
+    "stocks",
+    "stock-market",
+    "market-data",
+    "fundamental-data",
+    "financial-statements",
+    "real-time-quotes",
+    "historical-data",
+    "options-data",
+    "technical-indicators",
+    "sec-filings",
+    "earnings-transcripts",
+    "ai-agent-tools",
+    "llm-tools"
+  ]
+}
