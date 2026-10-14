@@ -108,7 +108,7 @@ This stock market MCP server exposes **25 read-only tools** across seven categor
 - **Financial ratios** — profitability (ROE, ROA, ROIC, margins), credit/debt, liquidity, working capital, yield.
 - **Valuation** — P/E, P/B, P/S, EV/EBITDA and other multiples, enterprise value, per-share data.
 - **Earnings calls** — full earnings call transcripts by year and quarter.
-- **Stock prices** — real-time and historical OHLCV with date ranges (a stock price MCP server in its own right).
+- **Stock prices** — end-of-day and historical OHLCV with date ranges (a stock price MCP server in its own right).
 - **Company data** — profiles (CEO, sector, industry, employees) and news.
 - **Discovery** — search and list tickers, exchanges, sectors, industries, countries.
 
